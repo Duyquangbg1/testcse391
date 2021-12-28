@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - exam</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="booking">
+      <h2 class="booking-title">Đăng ký du lịch</h2>
+      <form class="booking-form">
+        <table class="booking-table">
+          <tr>
+            <th>
+              <label for="fullName">Họ và tên</label>
+            </th>
+            <td>
+              <input type="text" id="fullName" />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="address">Địa chỉ</label>
+            </th>
+            <td>
+              <input type="text" id="address" />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="phone">Số điện thoại</label>
+            </th>
+            <td>
+              <input type="text" id="phone" />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="customer">Khách việt nam</label>
+            </th>
+            <td>
+              <input type="checkbox" id="customer" />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="tour">Chọn tour</label>
+            </th>
+            <td>
+              <select id="tour">
+                <option selected value="">Hà Nội</option>
+                <option value="">Bình Thuận</option>
+                <option value="">Buôn Ma Thuột - Gia Lai - Kontum</option>
+                <option value="">Hải Phòng</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label>Phương tiện</label>
+            </th>
+            <td>
+              <input type="radio" checked name="vehicle" id="plane" />
+              <label for="plane">Máy bay</label>
+              <input type="radio" name="vehicle" id="car" />
+              <label for="car">Xe ô tô</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="adult">Người lớn</label>
+              <input type="text" id="adult" />
+              <label for="children">Trẻ em</label>
+              <input type="text" id="children" />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="extraNotes">Ghi chú thêm</label>
+            </th>
+            <td>
+              <textarea id="extraNotes"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button id="agree">Đồng ý</button>
+              <button id="reset">Reset</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p id="notification"></p>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
